@@ -444,6 +444,11 @@ where
     pub fn y_out(&self) -> &Vec<OVector<T, D>> {
         &self.y_out
     }
+
+    /// Getter for all output.
+    pub fn out(self) -> (Vec<f64>, Vec<OVector<T, D>>) {
+        (self.x_out, self.y_out)
+    }
 }
 
 fn sign(a: f64, b: f64) -> f64 {
