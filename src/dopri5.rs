@@ -445,9 +445,9 @@ where
         &self.y_out
     }
 
-    /// Getter for all output.
-    pub fn out(self) -> (Vec<f64>, Vec<OVector<T, D>>) {
-        (self.x_out, self.y_out)
+    /// Getter for all output and system.
+    pub fn out(self) -> (Vec<f64>, Vec<OVector<T, D>>, F) {
+        (self.x_out, self.y_out, self.f)
     }
 }
 
